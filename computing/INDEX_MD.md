@@ -1,0 +1,89 @@
+# Astronomical Computing – Sky & Telescope (Program Index)
+
+The following programs have appeared in the pages of *Sky & Telescope* magazine.
+See `README.1ST` for information on how to order back issues.
+
+| File | Issue | Description |
+| --- | --- | --- |
+| ADDMAG.BAS | Apr 84 p359 | Combined magnitude of two or more stars |
+| ALTAZ2.BAS | Jul 86 p70 | How to correct altitudes for refraction |
+| ALTAZ.BAS | Jun 84 p558 | Star altitude and azimuth at a given time |
+| ANGSEP.BAS | Aug 84 p159 | Angular separation of two celestial objects |
+| ASTEROID.BAS | Jun 93 p83 | The size of an asteroid from its brightness |
+| BINARY.BAS | Jul 87 p71 | Orbital ephemeris of a binary star |
+| CALENDAR.BAS | Jul 85 p62 | Perpetual calendar (Gregorian) |
+| CALJD.BAS | May 84 p454 | Convert calendar date to Julian day |
+| CAPTURE.BAS | Feb 94 p85 | Best film/camera combos for capturing meteors |
+| CCDLIMIT.BAS | Feb 93 p84 | Compute the signal-to-noise ratio of a CCD |
+| CHART.BAS | Apr 89 p420 | Find atlas charts for any celestial coordinates |
+| CIRCLE.BAS | Mar 88 p304 | Make setting circles and scales on a printer |
+| CLOCK.BAS | May 87 p535 | Add Moon to a real-time clock (APPLE II) |
+| COMET.BAS | Dec 85 p590 | Compute the ephemeris of a comet |
+| DIAL.BAS | Dec 87 p646 | Design a vertical sundial |
+| DIFPAT.BAS | Sep 87 p294 | Compute and display diffraction patterns |
+| EASTER.BAS | Mar 86 p294 | Compute date of Easter |
+| EXTINC.BAS | Apr 87 p426 | Compute extinction of starlight |
+| FIREBALL.BAS | Jun 91 p640 | Calculate descent of a fireball |
+| FRACTS.BAS | Jan 89 p80 | Represent a decimal as a continued fraction |
+| GALISA.BAS | Jun 89 p650 | Plot Galilean moons of Jupiter (APPLE II) |
+| GFLASH.BAS | Feb 92 p200 | Simulate the appearance of the "green flash" |
+| GLOB1.BAS | Dec 84 p555 | Distribution of globular clusters (APPLE II) |
+| GLOB2.BAS | Dec 84 p555 | Distribution of globular clusters (APPLE II) |
+| GMST.BAS | Jun 84 p558 | Sidereal time for Greenwich meridian |
+| GOSS.BAS | Oct 89 p410 | Light curves of eclipsing binaries |
+| GWMONTH.BAS | Oct 84 p347 | Convert month number to name |
+| HARTLEY.BAS | Jan 90 p86 | Globe- and grid-drawing program (MACINTOSH) |
+| HELIAC.BAS | Sep 85 p261 | Heliacal rise and set times |
+| INTERP.BAS | Apr 84 p359 | Lagrange interpolation (multiple data points) |
+| JACK.BAS | Sep 94 p78 | Demo of perturbed planetary motion |
+| JDCAL.BAS | May 84 p454 | Convert Julian day to calendar date |
+| JMERID.BAS | Dec 89 p640 | Jupiter's central meridian for any date/time |
+| KEPLER.BAS | Aug 85 p158 | Solve Kepler's equation (celestial mechanics) |
+| LENS.BAS | Nov 84 p450 | Calculate curves for an aplanatic lens |
+| LHEIGHT.BAS | Jan 85 p62 | Compute heights of lunar features |
+| LIMMAG.BAS | Nov 89 p522 | Limiting magnitude of a telescope |
+| LIST.BAS | Aug 91 p182 | Make index lists of objects on star atlases |
+| LUNAR.BAS | Jun 88 p640 | Compute dates of lunar eclipses |
+| MALLAM.BAS | May 90 p534 | Precession of a satellite's orbit |
+| MARCHE.BAS | Jul 90 p71 | Astrometric positions of a comet or asteroid |
+| MARS.BAS | Sep 90 p296 | Physical ephemeris of Mars |
+| METEOR.BAS | Jan 87 p83 | Compute flight of meteors |
+| MIRROR.BAS | Feb 90 p195 | Foucault mirror test analysis |
+| MODEL.BAS | Apr 86 p398 | Create model of star cluster |
+| MOONFX.BAS | Apr 94 p86 | Moon phase and distance on any given date |
+| MOONS.BAS | Mar 85 p254 | Dates and times of new and full Moon |
+| MOONUP.BAS | Jul 89 p78 | Compute moonrise-moonset times for any place |
+| OBSCUR.BAS | Nov 86 p515 | Obscuration at a solar eclipse |
+| OCCVIS.BAS | Jan 93 p89 | Compute the visibility of a star near the Moon |
+| ORBITS.BAS | May 87 p535 | Positions in near-parabolic orbits |
+| ORIGAM.BAS | Apr 90 p424 | Make a paper model of a comet orbit |
+| PATH.BAS | Feb 87 p196 | Interpolate comet positions |
+| PERIAP.BAS | Nov 87 p527 | Compute lunar apogee and perigee |
+| PERIOD.BAS | Sep 88 p288 | Period search by Fourier transform |
+| PHOTOM.BAS | Feb 85 p158 | Reducing photometric observations |
+| PRECESS.BAS | Oct 91 p408 | Rigorous precession of a star's coordinates |
+| RAINBOW.BAS | Feb 91 p199 | Graphic simulation of a rainbow |
+| REACT.BAS | Aug 86 p174 | Test your personal reaction time |
+| REFR1.BAS | Mar 89 p311 | Compute atmospheric refraction |
+| RONCHI.BAS | Apr 91 p416 | Ronchi test simulation |
+| ROTATE.BAS | Sep 92 p318 | Field rotation in a misaligned telescope |
+| SAROS.BAS | Oct 85 p366 | Saros numbers for solar eclipses |
+| SHADOW.BAS | Apr 88 p417 | Modeling mountain shadows |
+| SHOWER.BAS | Aug 89 p195 | Dates of meteor showers |
+| SHUTTR.BAS | Jun 85 p158 | Shutter speeds for astrophotography |
+| SINE.BAS | Aug 89 p139 | Demonstration of chaotic behavior |
+| SOLARECL.BAS | Jul 91 p71 | Local predictions of 1991 July 11 solar eclipse |
+| SPACE.BAS | May 89 p531 | Space motion of a star |
+| SPHE.BAS | Sep 86 p278 | Measure radius of curvature with a spherometer |
+| SPIRAL.BAS | Dec 90 p654 | Modeling spiral galaxies |
+| STAY.BAS | Jul 84 p62 | Comet's time spent inside Earth's orbit |
+| STEPPR.BAS | Apr 85 p350 | Controlling a stepper motor |
+| STEREO.BAS | Oct 87 p407 | Plot stars using the sterographic projection |
+| SUNSHINE.BAS | Sep 84 p254 | Hours of sunshine for a specific latitude |
+| SUNTAN.BAS | Jul 93 p83 | Effects of ozone, haze, on suntanning time |
+| SUNUP.BAS | Aug 94 p84 | Times of sunrise/set at any place on Earth |
+| SURF.BAS | Oct 86 p392 | Surface brightness of an extended object |
+| TAKI.BAS | Feb 89 p194 | How to aim an altazimuth (Dobsonian) telescope |
+| TRACK.BAS | Feb 86 p190 | Astrophoto tracking tolerances |
+| WAVEL.BAS | Jun 85 p544 | Positions of absorption lines in a spectrogram |
+| XYZ.BAS | Nov 85 p470 | X,Y,Z coordinates of the Sun |

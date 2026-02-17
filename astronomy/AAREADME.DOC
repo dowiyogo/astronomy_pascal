@@ -1,0 +1,399 @@
+
+                          Floppy Disk User's Guide for 
+
+                           O.Montenbruck, T.Pfleger 
+
+                       ASTRONOMY ON THE PERSONAL COMPUTER
+                              (2nd edition 1994) 
+
+       (Turbo Pascal 6.0, Turbo Pascal for Windows 1.0, Pure Pascal 1.0)
+
+
+ The present floppy disk contains the source codes of the programs described
+ in "Astronomy on the Personal Computer". For generating executable programs
+ a Pascal compiler is required. All programs can directly be compiled with 
+ Turbo Pascal 6.0 on IBM compatible PCs or Pure Pascal on Atari ST computers.
+
+
+
+ 1. Contents:
+ ____________
+
+ Documentation  ( A:\ )
+ 
+  File            Description
+
+  AAREADME.DOC    Table of contents and installation guide
+
+
+ Main Programs  ( A:\ )
+
+  File            Description
+
+  COCO.PAS        Coordinate transformations
+  COMET.PAS       Cometary orbits  
+  CONTROL.PAS     Verification of orbit determination results from ORBDET (*)
+  ECLIPSE.PAS     Solar eclipses
+  ECLTIMER.PAS    Local circumstances of solar eclipses
+  FOTO.PAS        Astrometric analysis of fotografic plates
+  LUNA.PAS        Lunar ephemeris
+  NEWMOON.PAS     Dates of New Moon
+  NUMINT.PAS      Numerical integration of minor planet orbits
+  OCCULT.PAS      Stellar occultations
+  ORBDET.PAS      Orbit determination
+  PHYS.PAS        Physical ephemerides
+  PLANPOS.PAS     Planetary positions
+  PLANRISE.PAS    Rising and setting times of the planets
+  SUNSET.PAS      Rising and setting times of sun and moon
+
+  (*) Note: 
+  The CONTROL program is not described in the book. It is essentially based
+  on the COMET program which is explained in Chap.4 in detail. CONTROL 
+  reads orbital elements from a file ORBOUT.DAT created during an orbit 
+  determination with ORBDET and calculates positions for the dates given 
+  in ORBINP.DAT. Using CONTROL the correct working of ORBDET can easily
+  be verified.
+
+
+ Input Data  ( A:\ )
+
+  File            Description 
+
+  COMINP.DAT      Orbital elements of comet Halley for use with COMET
+  FOTINP.DAT      Stellar positions for use with FOTO
+  NUMINP.DAT      Orbital elements of Ceres for use with NUMINT
+  OCCINP.DAT      Coordinates of the Pleiades for use with OCCULT
+  ORBINP.DAT      Ceres positions for orbit determination with ORBDET
+
+
+ Units Definition Files  ( A:\UNITS )
+
+  File            Description 
+
+  DELIB.PAS       Unit with sub-routines for numerical integration    
+  KEPLIB.PAS      Unit with sub-routines for calculating Keplerian orbits
+  MATLIB.PAS      Unit with mathematical sub-routines
+  MOOLIB.PAS      Unit with sub-routines for calculating the lunar orbit
+  P15LIB.PAS      Unit with sub-routines for planetary orbits (Mercury-Jupiter)
+  P69LIB.PAS      Unit with sub-routines for planetary orbits (Saturn-Pluto)
+  PHYLIB.PAS      Unit with sub-routines for physical ephemerides    
+  PLALIB.PAS      Unit with sub-routines for computing planetary positions
+  PNULIB.PAS      Unit with sub-routines for calculating precession and nutation
+  SPHLIB.PAS      Unit with spherical astronomy sub-routines
+  SUNLIB.PAS      Unit with sub-routines for calculating the solar orbit
+  TIMLIB.PAS      Unit with time and calendar sub-routines
+
+
+ Sub-routines for numerical integration  ( A:\DE )
+
+  File            Description 
+
+  DE.PAS          Driver for the DE multistep method
+  INTRP.PAS       Interpolation of the solution
+  STEP.PAS        Computation of a single integration step
+  EPSMACH.PAS     Computation of the machine accuracy
+
+
+ Sub-routines for Calculating Keplerian Orbits  ( A:\KEPLER )
+
+  File            Description 
+
+  ECCANOM.PAS     Mean -> excentric anomaly (ellipse)
+  ELEMENT.PAS     Orbital elements from two position vectors
+  ELLIP.PAS       Position and velocity in an elliptical orbit
+  FINDETA.PAS     Sector-triangle ratio
+  HYPANOM.PAS     Mean -> eccentric anomaly (hyperbola)
+  HYPERB.PAS      Position and velocity in a hyperbolic orbit
+  KEPLER.PAS      Position and velocity 
+                  (two-body problem for all forms of orbit)
+  PARAB.PAS       Position and velocity in a parabolic orbit
+  STUMPFF.PAS     Stumpff functions
+  XYZKEP.PAS      Orbital elements from position and velocity
+
+
+ Mathematical Sub-routines   ( A:\MATH )
+
+  File            Description 
+
+  ACS.PAS         Arccos (in degrees)
+  ASN.PAS         Arcsin (in degrees)
+  ATN.PAS         Arctan (in degrees)
+  ATN2.PAS        Arctan (in degrees, correct quadrant)
+  CART.PAS        Cartesian coordinates from polar coordinates
+  CROSS.PAS       Cross-product of two vectors
+  CS.PAS          Cos (in degrees)
+  CUBR.PAS        Cube root
+  DDD.PAS         Decimal degrees from minutes and seconds 
+  DMS.PAS         Minutes and seconds from decimal degrees
+  DOT.PAS         Dot product of two vectors
+  LSQFIT.PAS      Calculating best fit (least-squares method)
+  NORM.PAS        Length of a vector
+  POLAR.PAS       Polar coordinates from Cartesian coordinates
+  QUAD.PAS        Quadratic interpolation from three points
+  SN.PAS          Sin (in degrees)
+  TEVAL.PAS       Evaluation of a Chebyshev polynomial
+  TFITLBR.PAS     Approximation by Chebyshev polynomials
+  TN.PAS          Tan (in degrees))
+
+
+ Lunar Orbit  ( A:\MOON )
+
+  File            Description 
+
+  MINIMOON.PAS    Reduced-accuracy lunar coordinates
+  MOON.PAS        More accurate lunar ecliptic coordinates
+  MOONEQU.PAS     More accurate lunar equatorial coordinates
+  TFITMOON.PAS    Approximation of lunar coordinates by Chebyshev polynomials
+
+
+ Physical ephemerides  ( A:\PHYS )
+
+  File            Description 
+  
+  BRIGHT.PAS      Apparent brightness  
+  ILLUM.PAS       Conditions of illumination
+  ORIENT.PAS      Rotational elements of the planets
+  POSANG.PAS      Position angle  
+  ROTATION.PAS    Rotational parameters
+  SHAPE.PAS       Form and size of the planets  
+
+
+ Planetary Positions  ( A:\PLANETS )
+
+  File            Description 
+
+  GEOCEN.PAS      Geocentric coordinates 
+  JUP200.PAS      Heliocentric Jupiter coordinates
+  MAR200.PAS      Heliocentric Mars coordinates
+  MER200.PAS      Heliocentric Mercury coordinates
+  NEP200.PAS      Heliocentric Neptune coordinates
+  PLU200.PAS      Heliocentric Pluto coordinates
+  SAT200.PAS      Heliocentric Saturn coordinates
+  URA200.PAS      Heliocentric Uranus coordinates
+  VEN200.PAS      Heliocentric Venus coordinates
+  POSITION.PAS    Heliocentric coordinates of the planets (Keplerian orbits)
+      
+
+ Precession and Nutation  ( A:\PRECNUT )
+
+  File            Description 
+
+  NUTEQU.PAS      Nutation in equatorial coordinates
+  PMATECL.PAS     Precession matrix (ecliptic coordinates)
+  PMATEQU.PAS     Precession matrix (equatorial coordinates)
+  PNMATRIX.PAS    Matrix for precession and nutation (equatorial)
+  PRECART.PAS     Precession in Cartesian coordinates
+
+
+ Spherical Astronomy  ( A:\SPHERIC )
+
+  File            Description 
+
+  ABERRAT.PAS     Stellar aberration 
+  APPARENT.PAS    Apparent coordinates
+  ECLEQU.PAS      Transformation ecliptic -> equatorial
+  EQUECL.PAS      Transformation equatorial -> ecliptic
+  EQUHOR.PAS      Transformation equatorial -> horizontal
+  EQUSTD.PAS      Standard coordinates from equatorial coordinates
+  GAUSVEC.PAS     Gaussian vectors
+  HOREQU.PAS      Transformation horizontal -> equatorial
+  ORBECL.PAS      Ecliptic coordinates of a point in the plane of the orbit
+  SITE.PAS        Coordinates of a point on the surface of the Earth
+  STDEQU.PAS      Equatorial coordinates from standard coordinates
+
+
+ Solar Orbit   ( A:\SUN )
+
+  File            Description 
+
+  MINISUN.PAS     Reduced-accuracy solar coordinates
+  SUN200.PAS      Ecliptic solar coordinates
+  SUNEQU.PAS      Equatorial solar coordinates
+  TFITSUN.PAS     Approximation of solar coordinates by Chebyshev polynomials
+
+ 
+ Time and Calendar   ( A:\TIME )
+
+  File            Description 
+
+  CALDAT.PAS      Calender date
+  ETMINUT.PAS     Approximation of difference ET-UT
+  LMST.PAS        Local mean sidereal time
+  MJD.PAS         Modified Julian Date
+
+ 
+ Diverse   ( A:\DIVERSE )
+
+  File            Description 
+
+  TFITMOON.PAS    Approximation of lunar coordinates by Chebyshev 
+                  polynomials (without use of T_FIT_LBR)
+  TFITSUN.PAS     A proximation of solar coordinates by Chebyshev 
+                  polynomials (without use of T_FIT_LBR)
+
+
+
+
+ 2. Notes for compiling and running the programs
+ _______________________________________________
+
+ Instead of executable programs the "Astronomy on the PC"-floppy disk contains
+ source texts, only, to allow the user to adapt all programs to his personal 
+ needs. A Pascal compiler is therefore required to run the program. All
+ programs can directly be compiled with Turbo Pascal 6.0 on IBM compatible PCs
+ and Pure Pascal on Atari ST/TT computers. The same holds for Turbo Pascal for
+ Windows 1.0, except for the fact that the unit WINCRT has to be added to the 
+ list of required units in each program. When using other compilers small 
+ changes may be required, which are described in the book in more detail. 
+ 
+ All steps required for compiling the programs with the most common compilers
+ are described in the subsequent sections. There it is assumed, that a hard 
+ disk with a minimum of 1.5 MB is available to hold all source codes and 
+ executable programs. The names for floppy disk drive and hard disk drive 
+ are taken as A: and C:, respectively. In case of problems refer to the 
+ instruction manuals of the hard- and software manufacturer.
+ 
+   
+ 2.1 Turbo Pascal 6.0 
+  
+ For compilation and testing of the programs use the following DOS commands to
+ copy all files from the floppy disk to an arbitrary working directory on the
+ hard disk (e.g. C:\APC):
+
+   MD C:\APC
+   CD C:\APC
+   XCOPY/S A:\*.*
+ 
+ In doing so, the directory structure described above is maintained. Under
+ the WINDOWS system the files may conveniently be copied using the file 
+ manager.
+ 
+ After starting the Turbo Pascal Compiler (usually with the command TURBO)
+ it should first be assured that the compiled programs are stored as permanent
+ files and not in memory. To this end the option "Disk" must be selected under
+ item "Destination" in "Compile" menue. The default stack size of 16kB is 
+ sufficient for all programs. 
+ 
+ In the "Directories" item of the "Options" menue, the working directory
+ (C:\APC) has to be specified as Include Directory, to ensure that the 
+ subroutines in the lower directories can be accessed during compilation of 
+ the unit files. Furthermore, C:\APC\UNITS must be entered as Units Directory.
+ Unless a special EXE- and TPU Directory has been specified the executable
+ programs will also be stored in the C:\APC directory.
+ 
+ Activating the menue item "File/Open" or pressing the function key <F3>, each
+ main program can now be loaded into the editor and subsequently be compiled
+ by "Compile/Make" (<F9>). If the required TPU files are not yet available, 
+ the corresponding unit files are automatically compiled. 
+
+ Thereafter the programs may be started inside the Integrated Development 
+ Environment by using item "Run/Run" (<Strg>-<F9>) or from the DOS command 
+ level by entering the program name. 
+
+
+ 2.2 Turbo Pascal for Windows 1.0
+
+ For use with Turbo Pascal for Windows execute the following DOS commands to
+ copy all files from the floppy disk to an arbitrary working directory on the
+ hard disk (e.g. C:\APC):
+
+   MD C:\APC
+   CD C:\APC
+   XCOPY/S A:\*.*
+ 
+ In doing so, the directory structure described above is maintained. Under
+ the WINDOWS system the files may conveniently be copied using the file 
+ manager.
+
+ In order to permanently store the compiled programs, the option "Disk"
+ is selected in the "Options/Linker..." menue. The working directory 
+ (C:\APC) and the units directory (C:\APC\UNITS) are specified as include 
+ file path and units directory, respectively, in the in "Options/Linker" 
+ menue. A stack size of 16kB is sufficient for all programs. 
+ 
+ After choosing a main program from the "Files/Open" menue, the Windows unit
+ WINCRT must be added to the list of required units after the USES command.
+ Subsequently the program and the accessed units may be compiled by 
+ "Compile/Make" (<F9>) and executed by "Run/Run" (<Strg>-<F9>) or using the
+ Windows file manager.
+ 
+
+ 2.3 Pure Pascal 1.0 for Atari ST/TT
+
+ For use of the programs with Pure Pascal all files on the floppy disk have
+ to be copied to a working directory (f.e. C:\APC) on the hard disk. The
+ directory structure described above has to be maintained. This can 
+ conveniently be achieved using the desktop.
+
+ Using the "Options/Directories" menu item of the Pure Pascal desktop the 
+ paths for source files and units and furthermore the output paths for 
+ compiled units and executable programs have to be specified. Entries in 
+ the corresponding dialog form are
+ - Input directories
+     Source files: C:\APC;C:\APC\UNITS
+     Units       : C:\APC\UNITS
+ - Output directories
+     Units       : C:\APC\UNITS
+     Programs    : C:\APC 
+ Optionally a directory for executable files like C:\APC\EXE can be created
+ and specified under "Output directories/Programs". This provides separate
+ storage of source and executable files if desired so.
+ In the "Options/Compiler" dialog the following entries are necessary:
+ - Default program extension: *.TOS
+ - Stack size: 16384
+ - Activate the options "Write programs to disk" and "Write units to disk" 
+   for permanent storage of compiled units and executable programs.
+ No further special compiler options are necessary. The $N option should only
+ be used for programs to operate exclusively on an Atari TT. An activated
+ $N option will cause malfunction when operating on a 68000-CPU based Atari
+ like the ST.
+ 
+ After selecting a main program source file with "File/Open" or double
+ clicking the file in the files window, the program with it's associated
+ units can be compiled with "Compile/Make" (<Alternate><M>) and executed
+ with "Run/Run" (<Alternate><R>).
+ 
+ During the compilation of some programs Pure Pascal generates warning
+ messages which have no influence on correct program execution. The
+ warnings (which would not be generated by Turbo Pascal) may be neglected.
+
+ On machines with only 1MB of RAM storage, the PLANPOS program cannot be
+ compiled from within the Pure Pascal developing environment as described
+ above. For compiling PLANPOS, proceed as follows:
+ - Boot the computer without accessories or memory resident programs.
+ - PLANPOS uses the units MATLIB, PNULIB, SPHLIB, SUNLIB, P15LIB, P69LIB
+   and TIMLIB, which have to be compiled separately. Open the appropriate
+   files with "File/Open" or by double clicking in the file window and 
+   compile subsequently with "Compile/Compile" (<Alternate><C>).
+ - Copy the main file PLANPOS.PAS to the Pure Pascal main directory (the
+   default name is C:\PPASCAL).
+ - Now start the command line version of the Pure Pascal compiler (PPC.TTP)
+   by double clicking from the Atari desktop.
+ - In the form appearing, enter the following command line:
+      planpos -I\apc;\apc\units -U\apc\units
+   With a command line interpreter available, a longer command line including
+   the full source file path can be entered:
+      c:\apc\planpos -I\apc;\apc\units -U\apc\units
+   Doing this, it's not necessary to copy PLANPOS.PAS to Pure Pascal's main
+   directory.
+   The generated program PLANPOS.PRG has to be renamed to PLANPOS.TOS. This
+   can be done using the desktop's "File/Info..." item.
+
+
+
+ 3. Input Data
+ _____________
+
+ For reasons of copyright it is not possible for us to provide a larger 
+ set of orbital elements of comets and minor planets for use with the
+ COMET program. The same is true for a catalogue of stars close to the 
+ ecliptic which would be required for the prediction of stellar occultations
+ by the OCCULT program. 
+
+ We must, therefore, ask you to enter these data manually or to obtain them 
+ from public domain software and data collections. Please refer to your 
+ astronomy and/or computer magazine for further references.
+
+
+
+

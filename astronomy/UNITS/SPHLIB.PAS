@@ -1,0 +1,37 @@
+(*-----------------------------------------------------------------------*)
+(* Unit SPHLIB: spherical astronomy                                      *)
+(*-----------------------------------------------------------------------*)
+
+UNIT SPHLIB;
+
+INTERFACE
+
+  USES MATLIB, PNULIB;
+
+  PROCEDURE ABERRAT ( T: REAL; VAR VX,VY,VZ: REAL );
+  PROCEDURE APPARENT ( PNMAT: REAL33; VX,VY,VZ: REAL; VAR RA,DEC: REAL );
+  PROCEDURE ECLEQU ( T: REAL; VAR X,Y,Z: REAL );
+  PROCEDURE EQUECL ( T: REAL; VAR X,Y,Z: REAL );
+  PROCEDURE EQUHOR ( DEC, TAU, PHI: REAL; VAR H, AZ: REAL);
+  PROCEDURE HOREQU ( H, AZ, PHI: REAL; VAR DEC, TAU: REAL);
+  PROCEDURE EQUSTD ( RA0,DEC0,RA,DEC: REAL; VAR XX,YY: REAL );
+  PROCEDURE GAUSVEC ( LAN,INC,AOP: REAL; VAR PQR: REAL33 );
+  PROCEDURE ORBECL ( XX,YY:REAL;PQR:  REAL33;  VAR X,Y,Z:REAL );
+  PROCEDURE SITE ( PHI: REAL; VAR RCPHI,RSPHI: REAL );
+  PROCEDURE STDEQU ( RA0,DEC0,XX,YY: REAL; VAR RA,DEC: REAL );
+  
+IMPLEMENTATION
+
+  (*$I \SPHERIC\ABERRAT.PAS  *)
+  (*$I \SPHERIC\APPARENT.PAS *)
+  (*$I \SPHERIC\ECLEQU.PAS   *)
+  (*$I \SPHERIC\EQUECL.PAS   *)
+  (*$I \SPHERIC\EQUHOR.PAS   *)
+  (*$I \SPHERIC\HOREQU.PAS   *)
+  (*$I \SPHERIC\EQUSTD.PAS   *)
+  (*$I \SPHERIC\GAUSVEC.PAS  *)
+  (*$I \SPHERIC\ORBECL.PAS   *)
+  (*$I \SPHERIC\SITE.PAS     *)
+  (*$I \SPHERIC\STDEQU.PAS   *)
+
+END.
