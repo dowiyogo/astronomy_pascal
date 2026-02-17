@@ -1,3 +1,31 @@
+# SKY & TELESCOPE'S ASTRONOMICAL COMPUTING DISKETTE
+
+SKY & TELESCOPE astronomy magazine is pleased to make available in machine-
+readable form the programs that have appeared in its monthly Astronomical 
+Computing department.  These are offered as-is and without support.
+
+Whenever possible the programs are written in simple generic BASIC, but 
+there are unavoidable variations from one interpreter to another.  In case 
+of difficulties, check your BASIC manual.  A few programs require specific
+graphics adapters or printers.
+
+At the end of each program is a block indicating the issue of the magazine 
+in which the program appeared together with supporting text and instructions.
+If you have any questions, consult the original articles.  The department 
+began in the April, 1984, issue, and back issues are available at $3.00 
+each postpaid ($4.00 foreign) from: 
+
+                      Sky Publishing Corp. 
+                      P.O. Box 9111
+                      Belmont, Mass. 02178-9111
+
+The following issues are out of print:  April through December, 1984; 
+January, February, and October, 1986; and January through March, 1989.  If
+you want photocopies of the Astronomical Computing department for any of 
+these months, send a self-addressed stamped long envelope and $2.00 for each
+month to Astronomical Computing Copies at the address above.  See the 
+INDEX.TXT file for an alphabetical title index of the programs on this disk.
+
 # Astronomical Computing – Sky & Telescope (Program Index)
 
 The following programs have appeared in the pages of *Sky & Telescope* magazine.
