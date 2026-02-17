@@ -115,3 +115,50 @@ See `README.1ST` for information on how to order back issues.
 | TRACK.BAS | Feb 86 p190 | Astrophoto tracking tolerances |
 | WAVEL.BAS | Jun 85 p544 | Positions of absorption lines in a spectrogram |
 | XYZ.BAS | Nov 85 p470 | X,Y,Z coordinates of the Sun |
+
+
+````md
+## 2.3 Ejecutar programas BASIC (.BAS) en Linux (sin gráficos/sonido)
+
+La mayoría de estos `.BAS` son listados “tipo GW-BASIC” (muchos orientados a Apple II, pero usualmente imprimen resultados numéricos). En Linux, la forma más simple es usar **PC-BASIC**, que ejecuta BASIC estilo DOS/GW-BASIC sin necesidad de DOSBox.
+
+### Debian/Ubuntu
+Instalar:
+```bash
+sudo apt update
+sudo apt install -y python3 python3-pip pipx
+pipx ensurepath
+pipx install pcbasic
+````
+
+Ejecutar un programa:
+
+```bash
+cd <REPO>/computing
+pcbasic ADDMAG.BAS
+```
+
+### AlmaLinux / RHEL compatibles
+
+Instalar:
+
+```bash
+sudo dnf -y install python3 python3-pip
+python3 -m pip install --user pipx
+python3 -m pipx ensurepath
+pipx install pcbasic
+```
+
+(Abre una terminal nueva si `pipx` no queda en el PATH.)
+
+Ejecutar:
+
+```bash
+cd <REPO>/computing
+pcbasic ADDMAG.BAS
+```
+
+> Sugerencia: si un programa no encuentra archivos auxiliares, ejecútalo desde la misma carpeta donde están los `.BAS` y sus datos.
+
+```
+```
