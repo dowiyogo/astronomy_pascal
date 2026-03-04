@@ -116,8 +116,6 @@ See `README.1ST` for information on how to order back issues.
 | WAVEL.BAS | Jun 85 p544 | Positions of absorption lines in a spectrogram |
 | XYZ.BAS | Nov 85 p470 | X,Y,Z coordinates of the Sun |
 
-
-````md
 ## 2.3 Ejecutar programas BASIC (.BAS) en Linux (sin gráficos/sonido)
 
 La mayoría de estos `.BAS` son listados “tipo GW-BASIC” (muchos orientados a Apple II, pero usualmente imprimen resultados numéricos). En Linux, la forma más simple es usar **PC-BASIC**, que ejecuta BASIC estilo DOS/GW-BASIC sin necesidad de DOSBox.
